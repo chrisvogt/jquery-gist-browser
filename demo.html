@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
     <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
     <style>
+    body {
+        background-color: #326CA4;
+        color: #efefef;
+    }
+    h1, h2, h3, h4, blockquote {
+        color: #fefefe;
+    }
     .row.fullWidth {
        width: 100%;
        margin-left: auto;
@@ -33,11 +40,15 @@
         list-style: none;
     }
     #files li {
-        background-color: #f9f9f9;
+        background-color: #A7C9E9;
+        color: #155695;
         border-radius: 4px;
         display: inline-block;
         padding: 2px 8px;
         margin: 0 8px 8px 0;
+    }
+    #control {
+        padding: 24px 0;
     }
     </style>
 </head>
@@ -54,54 +65,6 @@
             </li>
             <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
         </ul>
-        <section class="top-bar-section">
-            <ul class="right">
-                <li class="divider"></li>
-                <li class="has-dropdown">
-                    <a href="#">Main Item 1</a>
-                    <ul class="dropdown">
-                        <li>
-                            <label>Section Name</label>
-                        </li>
-                        <li class="has-dropdown">
-                            <a href="#" class="">Has Dropdown, Level 1</a>
-                            <ul class="dropdown">
-                                <li><a href="#">Dropdown Options</a></li>
-                                <li><a href="#">Dropdown Options</a></li>
-                                <li><a href="#">Level 2</a></li>
-                                <li><a href="#">Subdropdown Option</a></li>
-                                <li><a href="#">Subdropdown Option</a></li>
-                                <li><a href="#">Subdropdown Option</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Dropdown Option</a></li>
-                        <li><a href="#">Dropdown Option</a></li>
-                        <li class="divider"></li>
-                        <li>
-                            <label>Section Name</label>
-                        </li>
-                        <li><a href="#">Dropdown Option</a></li>
-                        <li><a href="#">Dropdown Option</a></li>
-                        <li><a href="#">Dropdown Option</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">See all →</a></li>
-                    </ul>
-                </li>
-                <li class="divider"></li>
-                <li><a href="#">Main Item 2</a></li>
-                <li class="divider"></li>
-                <li class="has-dropdown">
-                    <a href="#">Main Item 3</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Dropdown Option</a></li>
-                        <li><a href="#">Dropdown Option</a></li>
-                        <li><a href="#">Dropdown Option</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">See all →</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
     </nav>
     <div class="row fullWidth">
         <div id="browser" class="large-12 columns" data-gist-username="chrisvogt">
@@ -123,11 +86,18 @@
             </div>
         </div>
     </div>
+    <div id="control" class="row">
+        <div class="large-11 columns">
+            <input type="text" placeholder="GitHub username">
+        </div>
+        <div class="large-1 columns">
+            <a class="button tiny radius" href="#">Load</a>
+        </div>
+    </div>
     <div class="row">
-        <hr/>
         <div class="large-6 columns">
-            <h4>This is a content section.</h4>
-            <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+            <h1>jquery.gist.js</h1>
+            <blockquote>jQuery Gist widget to browse and review a user's public gists.</blockquote>
         </div>
         <div class="large-6 columns">
             <h4>This is a content section.</h4>
@@ -149,15 +119,10 @@
             <hr>
             <div class="row">
                 <div class="large-6 columns">
-                    <p>© Copyright no one at all. Go to town.</p>
+                    <p><span class="octicon octicon-code"></span> with <span class="octicon octicon-heart"></span> by @c1v0.</p>
                 </div>
-                <div class="large-6 columns">
-                    <ul class="inline-list right">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                    </ul>
+                <div class="large-6 columns text-right">
+                    <p>Get the source on <span class="octicon octicon-logo-github"></span>.</p>
                 </div>
             </div>
         </div>
