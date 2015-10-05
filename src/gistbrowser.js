@@ -63,7 +63,7 @@
 		      	for (var i = 0; i < files.length; i++) {
 		      		var file = files[i];
 		      		console.log(file);
-		      		$("#files").append($("<li>" + file['filename'] + "</li>", file));
+		      		$("#files").append($("<li><span class=\"octicon octicon-gist\"></span> " + file['filename'] + "</li>", file));
 		      	}
 
 		      }
