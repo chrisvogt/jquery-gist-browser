@@ -11,7 +11,7 @@
                 query = buildQuery(username);
 
             /**
-             * "Hold on to your butts," 
+             * "Hold on to your butts,"
              */
             makeCall(query, this);
             reloadInterface();
@@ -54,7 +54,8 @@
             function makeCall(q, e) {
                 return $.ajax({
                     // url: q,
-                    url: "_mock.json",
+                    // url: "_mock.json",
+                    url: "https://cdn.rawgit.com/chrisvogt/jquery-gist-browser/gh-pages/_mock.json",
                     success: function(data) {
                         var html = $(e).empty(),
                             gists = data,
