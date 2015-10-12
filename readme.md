@@ -25,4 +25,4 @@ In your web page:
 
 ## License
 
-MIT © Chris Vogt
+MIT © Chris Vogt. https://www.chrisvogt.me
